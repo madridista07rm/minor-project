@@ -1,0 +1,227 @@
+body{
+    background: rgba(0,0,0,0.8);
+    margin: 0;
+    color: #fff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+.showcase::after{
+  content: '';
+  height: 100vh;
+  width: 100%;
+  background-image: url(./wallpaper/a3.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  transition: all 500ms;
+}
+.showcase:hover::after{
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    background-attachment: fixed;
+}
+
+.showcase:hover .content{
+    filter: blur(0.5px);
+    -webkit-filter: blur(0.5px);
+    background-attachment: fixed;
+}
+
+
+
+.content{
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left:50%;
+    margin-top: 105px;
+    margin-left: -145px;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    transition: all 500ms;
+}
+
+.content .logo{
+    height: 250px;
+    width: 250px;
+}
+
+.content .title{
+    font-size: 2.2rem;
+    margin-top: 1rem;
+}
+
+.content .text{
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
+.containe{
+    max-width: 950px;
+    margin: auto;
+    overflow: hidden;
+    padding: 4rem 1rem;
+}
+.para{
+    background-color: rgba(255, 255, 255, 0.904);
+}
+
+.grid-3{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.grid-2{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.center{
+    text-align: center;
+    margin:  auto auto auto;
+}
+
+.bg-light{
+    background: #f4f4f4;
+    color: #333;
+}
+
+
+.bg-dark{
+    background:#333;
+    color:#f4f4f4;
+}
+
+footer{
+    padding: 2.2rem;
+}
+
+/*small screen*/
+@media(max-width:560px){
+    .showcase::after{
+        height: 50vh;
+    }
+
+    .content{
+        top: 6%;
+        margin-top:5px;
+    }
+
+    .content .logo{
+        height: 140px;
+        widows: 140px;
+    }
+
+    .content .text{
+        display:none;
+    }
+
+    .grid-3{
+        grid-template-columns: 1fr;
+    }
+
+    .grid-2{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-height:500px){
+    .content .title,.content .text{
+        display:none;
+    }
+
+    .content{
+        top:0;
+    }
+}
+
+#testimonials{
+    background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.7),#0000), url(./wallpaper/a7.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    font-family: 'Work Sans', sans-serif;
+    color:#fff;
+    background-color:rgb(32, 29, 29);
+   
+    text-align: center;
+}
+.carousel-item{
+    padding:5% 15%;
+}
+.testimg{
+    width: 35%;
+    border-radius: 100%;
+    margin: 25px;
+}
+.card{
+    font-family: 'Inconsolata', monospace;
+    color: rgb(190, 56, 56);
+    margin: 0 0 50px;
+    font-size: 2rem;
+}
+.h22{
+    font-family: 'Inconsolata', monospace;
+    font-size: 3rem;
+    color: #000;
+}
+#pricing{
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.904);
+}
+.prcol{
+    padding: 3% 2%;
+    text-align: center;
+}
+
+.im{
+    height: 260px;
+    width: auto;
+}
+
+#cta{
+    background-color: #000 ;
+    text-align: center;
+    padding: 2%;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8),#0000),url(./wallpaper/applewall2.jpg);
+    background-size: cover;
+    background-position: contain;
+    background-attachment: fixed;
+    
+
+}
+.h3{
+   padding: 100px;
+}
+
+.n{
+    position: absolute ;
+    z-index: 1;
+    width: 100vh;
+    transition: 0.8s;
+}
+.it{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bolder;
+    color: rgb(97, 97, 97);
+}
+.services{
+    padding: 22px;
+}
+.n:hover{
+    color: #000;
+    font-size: x-large;
+    font-weight: bolder;
+}
