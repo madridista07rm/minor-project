@@ -1,1 +1,1 @@
-# minor-project for college
+# very basic minor-project for college
